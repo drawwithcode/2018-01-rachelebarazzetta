@@ -123,8 +123,13 @@ fill(250, 0, 0);
 
 	//bacino
 	noStroke();
+
+	fill(105, 105, 105);
+	arc(555, 370, 110, 110, TWO_PI, PI);
 	fill(245, 135, 30);
-	triangle(500, 370, 610, 370, 555, 410);
+	triangle(500, 370, 610, 370, 555, 425);
+
+
 
 
 	//head2
@@ -190,13 +195,10 @@ triangle(565, 340, 575, 340, 570, 330);
 	line(670, 360, 670, 310);
 
 		//hands
-	line(655, 360, 685, 360);
-	line(655, 360, 655, 380);
-	line(685, 360, 685, 380);
+		noFill();
+   	arc(670, 380, 30, 30, PI, TWO_PI);
 
-	line(425, 360, 455, 360);
-	line(425, 360, 425, 380);
-	line(455, 360, 455, 380);
+		arc(440, 380, 30, 30, PI, TWO_PI);
 
 		//Shoulder
 noStroke();
@@ -211,13 +213,32 @@ noStroke();
 
 	//mirror
 	noStroke();
-	fill(150, 224, 255, 30);
-	rect(500, 180, 110, 170);
+	fill(150, 224, 245, 40);
+	rect(500, 200, 110, 170);
 
-	translate(425, -15);
-	rotate(45);
-	fill(255, 255, 255, 200);
+	arc(555, 200, 110, 110, PI, TWO_PI);
+
+
+	//questionmark
+	stroke(255, 0, 0);
+	strokeWeight(8);
+	noFill();
+	arc(165, 190, 40, 40, PI+1, PI/2);
+	line(165, 230, 165, 210);
+	line(135, 230, 135, 170);
+
+	fill(255, 0, 0);
+	noStroke();
+	ellipse(135, 250, 10);
+	ellipse(165, 250, 10);
+
+//riflesso
+translate(710, -25);
+	rotate(46);
+	fill(255, 255, 255, 40);
 	ellipse(240, 30, 15, 50);
+
+
 
 
 
